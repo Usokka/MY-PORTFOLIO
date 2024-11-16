@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+
+    <header class="header">
+            <h1 class="header-title">
+                <a href="#presentation">Badis Aourtilane</a>
+            </h1>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#skills" class="nav-list-elem">Compétences</a></li>
+                    <li><a href="#projects" class="nav-list-elem">Projets</a></li>
+                </ul>
+
+                <div class="toggle-btn">
+                    <svg id="night" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21a9 9 0 0 1-.5-17.986V3c-.354.966-.5 1.911-.5 3a9 9 0 0 0 9 9c.239 0 .254.018.488 0A9.004 9.004 0 0 1 12 21Z"/>
+                      </svg>
+    
+                      <div class="btn-container">
+                        <div class="switch">
+    
+                        </div>
+                      </div>
+    
+                      <svg id="day" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 5V3m0 18v-2M7.05 7.05 5.636 5.636m12.728 12.728L16.95 16.95M5 12H3m18 0h-2M7.05 16.95l-1.414 1.414M18.364 5.636 16.95 7.05M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/>
+                      </svg>
+                </div>
+            </nav>
+
+    </header>
+
+
+    <main>
+        
+        <section id="presentation">
+
+            <div class="wrapper">
+                <h1 class="present-title">
+                    Bienvenue sur mon portfolio
+                </h1>
+            </div>
+        
+            <h3 class="present-desc hidden-present">
+                Je suis un étudiant de 3ème année en Informatique passionné par la création de solutions innovantes.
+            </h3>
+
+            <div class="cmd hidden-present">
+                <header class="cmd-header">
+                    <div class="cmd-btn reduce">
+                        <div class="line">
+                        </div>
+                    </div>
+                    <div class="cmd-btn enlarge">
+                        <div class="square">
+                        </div>
+                    </div>
+                    <div class="cmd-btn close">
+                        <div class="cross">
+                        </div>
+                        <div class="cross">
+                        </div>
+                    </div>
+                </header>
+                
+                <div class="cmd-body">
+                    Badis Portfolio [version 1.0] <br> 
+                    (c) Badis Corporation. Tous droits réservés.
+                    <ul>
+                        <li class="cmd-line">
+                            <p class="cmd-req">
+                                Badis.study
+                            </p>
+                            <p class="cmd-resp">
+                                "Licence 3 systèmes informatiques - université Abderrahmane Mira Béjaia"
+                            </p>
+                        </li>
+
+                        <li class="cmd-line">
+                            <p class="cmd-req">
+                                Badis.interests
+                            </p>
+                            <p class="cmd-resp">
+                                ["Jeux vidéo","Musique","Programmation"]
+                            </p>
+                        </li>
+
+                        <li class="cmd-line">
+                            <p class="cmd-req">
+                                Badis.skills
+                            </p>
+                            <p class="cmd-resp">
+                                <a href="#skills">see my skills</a>
+                            </p>
+                        </li>
+
+                        <li class="cmd-line">
+                            <p class="cmd-req ">
+                                Badis.projects
+                            </p>
+                            <p class="cmd-resp">
+                                <a href="#projects">see my projects</a>
+                            </p>
+                        </li>
+
+                        <li class="cmd-line">
+                            <p class="cmd-req"></p>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills">
+
+            <h1 class="skills-title">Compétences</h1>
+
+            <ul class="skills-container">
+                <li class="skill hidden-skill">HTML</li>
+                <li class="skill hidden-skill">CSS</li>
+                <li class="skill hidden-skill">JavaScript</li>
+                <li class="skill hidden-skill">React</li>
+                <li class="skill hidden-skill">Java</li>
+                <li class="skill hidden-skill">C</li>
+                <li class="skill hidden-skill">MySQL</li>
+                <li class="skill hidden-skill">Git</li>
+            </ul>
+        </section>
+        
+        <section id="projects"> 
+
+            <h1 class="projects-title">Projets</h1>
+
+            <div class="projects-container hidden-project">
+                <article class="project">
+                    <div class="project-img-container"> 
+                        <div class="project-img" id="pong">
+
+                        </div>
+                    </div>
+
+                    <div class="project-desc">
+                        <h1>Pong game</h1>
+                        <p>
+                            Mon tout premier projet, qui applique les bases que j'ai apprises en algo (boucles, conditions, pointeurs).
+                        </p>
+                        <ul class="techs-container">
+                            <li>C</li>
+                            <li>SDL</li>
+                        </ul>
+
+                            <a href="https://github.com/Usokka/PONG-GAME-IN-C" target="_blank">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                                GitHub
+                            </a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project-img-container"> 
+                        <div class="project-img" id="portfolio">
+
+                        </div>
+                    </div>
+
+                    <div class="project-desc">
+                        <h1>Ce portfolio</h1>
+                        <p>
+                            Un petit test de portfolio pour montrer mes compétences frontend et partager certains de mes projets.
+                        </p>
+                        <ul class="techs-container">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                            <a href="https://github.com/Usokka">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                                GitHub
+                            </a>
+                    </div>
+                </article>
+                <article class="project">
+                    <div class="project-img-container"> 
+                        <div class="project-img" id="gertakess">
+
+                        </div>
+                    </div>
+
+                    <div class="project-desc">
+                        <h1>Gertakess</h1>
+                        <p>
+                            Projet actuellement en développement, une application desktop de gestion d'une caisse. Elle comportera aussi une gestion de stock, d'employés, de livraisons/commandes.
+                        </p>
+                        <ul class="techs-container">
+                            <li>Java</li>
+                            <li>JavaFX</li>
+                            <li>MySQL</li>
+                        </ul>
+
+                            <a href="https://github.com/Usokka">
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                                GitHub (pas de git repository pour l'instant)
+                            </a>
+                    </div>
+                </article>
+
+    
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Made by Badis Aourtilane © 2024
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
