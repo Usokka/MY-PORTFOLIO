@@ -23,20 +23,20 @@ const presentationObserver = new IntersectionObserver(entries=>{
 )
 hiddenPresent.forEach(elem =>presentationObserver.observe(elem))
 
+const hiddenSkill = document.querySelectorAll(".hidden-skill");
+const skillsObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show-skill");
+            skillsObserver.unobserve(entry.target); // Stop observing after revealing
+        }
+    });
+}, {
+    threshold: 0.1, // Corrected spelling of 'threshold'
+});
 
-
-const hiddenSkill = document.querySelectorAll(".hidden-skill")
-const skillsObserver = new IntersectionObserver(entries=>{
-    entries.forEach(entry=>{
-        entry.target.classList.add("show-skill",entry.isIntersecting);
-    })
-}
-,
-{
-    treshold:1,
-}
-)
-hiddenSkill.forEach(skill=>skillsObserver.observe(skill))
+// Observing each hidden skill
+hiddenSkill.forEach(skill => skillsObserver.observe(skill));
 
 
 
@@ -52,3 +52,13 @@ const projectsObserver = new IntersectionObserver(entries => {
     threshold: 0.3, 
 });
 hiddenProjects.forEach(project => projectsObserver.observe(project));
+
+
+
+/* CMD CONTROLS */
+
+const cmd = document.querySelector(".cmd")
+const enlarge = document.querySelector(".enlarge")
+
+enlarge.addEventListener("click",()=> !cmd.classList.contains("big") ? cmd.classList.add("big") : cmd.classList.remove("big"))
+
