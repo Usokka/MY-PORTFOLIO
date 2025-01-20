@@ -153,9 +153,8 @@ section {
 }
 
 .present-title {
-    width: 25ch;
+    width: 0;
     animation: typing 2s steps(25), blink .5s step-end infinite alternate;
-    animation-delay: 0.05s;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -175,6 +174,7 @@ section {
 
 @keyframes typing {
     from { width: 0 }
+    to {width: 25ch}
 }
 
 @keyframes blink {
