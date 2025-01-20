@@ -154,7 +154,7 @@ section {
 
 .present-title {
     width: 0;
-    animation: typing 2s steps(25), blink .5s step-end infinite alternate;
+    animation: typing 2s steps(25) forwards, blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
